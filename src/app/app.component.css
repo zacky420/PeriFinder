@@ -1,6 +1,6 @@
 div{
-    height: 1200px;
-    background-color: white;
+    height: auto;
+    background-color: rgb(253, 253, 253);
     border-radius: 30px;
     width: 75%;
 }

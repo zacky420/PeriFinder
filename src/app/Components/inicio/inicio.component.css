@@ -1,10 +1,21 @@
-h1{
-    font-size: 21px;
-}
-
-img {
-    max-width: 75%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-}
+/* Estilos para h1 */
+h1 {
+    font-size: 24px; /* Tamaño de fuente para títulos */
+    font-weight: bold; /* Peso de la fuente en negrita */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+  
+  /* Estilos para imágenes */
+  img {
+    max-width: 100%; /* Imágenes con ancho máximo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Hacer que la imagen sea un bloque */
+    margin-bottom: 100px; /* Espaciado inferior */
+  }
+  
+  /* Clase personalizada 'DivSeparator' */
+  .DivSeparator {
+    padding-bottom: 20px; /* Espaciado inferior */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+  

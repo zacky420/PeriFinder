@@ -1,0 +1,76 @@
+/* Estilo para imágenes dentro de los contenidos */
+img {
+  height: auto;
+  max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+}
+
+/* Estilo para párrafos con justificación */
+p {
+  text-align: justify;
+}
+
+/* Estilo para el botón de expansión */
+.boton {
+  background-image: url("https://www.svgrepo.com/show/9249/down-chevron.svg");
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.boton:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo para el contenido colapsable */
+.collapse {
+  margin-top: 10px; /* Espacio superior para separar del contenido anterior */
+  padding: 10px; /* Relleno interno para el contenido colapsado */
+  border: 1px solid #ddd; /* Borde del contenido colapsado */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo */
+}
+
+/* Estilo para las listas dentro del contenido */
+ul,
+ol {
+  padding-left: 20px; /* Sangría a la izquierda para las listas */
+}
+
+/* Estilo para los elementos de lista */
+li {
+  margin-bottom: 8px; /* Espacio inferior entre elementos de lista */
+}
+
+/* Estilo para los títulos (h1 y h2) */
+h1,
+h2 {
+  text-align: center; /* Centra los títulos horizontalmente */
+  color: #333; /* Color de texto oscuro */
+}
+
+/* Estilo para las líneas divisorias */
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para las imágenes en las secciones */
+.component-image {
+  width: 150px; /* Ancho deseado */
+  height: auto; /* Altura automática para mantener la proporción */
+  display: block; /* Para alinear correctamente las imágenes */
+  margin: 0 auto 10px; /* Centra las imágenes horizontalmente y añade margen inferior */
+}
+/* Estilo para el contenedor principal */
+.container {
+  padding: 20px;
+}
+
+/* Estilo para las secciones */
+section {
+  margin-bottom: 30px;
+}
