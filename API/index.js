@@ -48,7 +48,7 @@ function filtrarCampos(componente) {
                 nucleos_procesamiento: componente.nucleos_procesamiento,
                 frecuencia_reloj: componente.frecuencia_reloj,
                 ancho_banda_memoria: componente.ancho_banda_memoria,
-                interfaz_memoria: componente.interfaz_memoria,
+                interfaz: componente.interfaz,
                 consumo_energia: componente.consumo_energia,
                 compatibilidad_tecnologias: componente.compatibilidad_tecnologias,
                 tamano_tipo_refrigeracion: componente.tamano_tipo_refrigeracion
@@ -63,9 +63,10 @@ function filtrarCampos(componente) {
             return {
                 ...camposComunes,
                 capacidad: componente.capacidad,
-                tipo_interfaz: componente.tipo_interfaz,
+                tipo_interfaz: componente.interfaz,
                 velocidad_lectura_escritura: componente.velocidad_lectura_escritura,
-                durabilidad: componente.durabilidad
+                durabilidad: componente.durabilidad,
+                factor_forma: componente.factor_forma
             };
         case 'Placa Base':
             return {
