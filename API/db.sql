@@ -203,24 +203,24 @@ CREATE TABLE Componentes
 
 
 
-    --inserts para RAM
+    -- inserts para RAM
 
-    INSERT INTO Componentes
-        (tipo, nombre, imagen, marca, descripcion, precio, modelo, capacidad, velocidad_lectura_escritura, durabilidad, tipo_memoria, canales_memoria, voltaje)
-    VALUES
-        ('RAM', 'Corsair Vengeance LPX 16GB (2x8GB)', 'https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Memory/CMK16GX4M2Z2400C16/Gallery/VENG_LPX_BLK_00.webp?width=3840&quality=85&auto=webp&format=pjpg', 'Corsair', 'Kit de memoria RAM DDR4 de 16GB (2x8GB) para un rendimiento óptimo en juegos y multitarea.', 89.99, 'Vengeance LPX', '16GB (2x8GB)', '3200 MHz', 'Duradera y confiable', 'DDR4', 'Dual', '1.35V');
+  INSERT INTO Componentes
+    (tipo, nombre, imagen, marca, descripcion, precio, modelo, capacidad, velocidad_lectura_escritura, durabilidad, tipo_memoria, canales_memoria, voltaje, latencia)
+VALUES
+    ('RAM', 'Corsair Vengeance LPX 16GB (2x8GB)', 'https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Memory/CMK16GX4M2Z2400C16/Gallery/VENG_LPX_BLK_00.webp?width=3840&quality=85&auto=webp&format=pjpg', 'Corsair', 'Kit de memoria RAM DDR4 de 16GB (2x8GB) para un rendimiento óptimo en juegos y multitarea.', 89.99, 'Vengeance LPX', '16GB (2x8GB)', '3200 MHz', 'Duradera y confiable', 'DDR4', 'Dual', '1.35V', 'CL16');
 
-    INSERT INTO Componentes
-        (tipo, nombre, imagen, marca, descripcion, precio, modelo, capacidad, velocidad_lectura_escritura, durabilidad, tipo_memoria, canales_memoria, voltaje)
-    VALUES
-        ('RAM', 'G.Skill Ripjaws V Series 32GB (2x16GB)', 'https://www.gskill.com/_upload/images/153611092211.png', 'G.Skill', 'Kit de memoria RAM DDR4 de 32GB (2x16GB) diseñado para rendimiento extremo en aplicaciones intensivas.', 169.99, 'Ripjaws V Series', '32GB (2x16GB)', '3600 MHz', 'Alta durabilidad y estabilidad', 'DDR4', 'Dual', '1.35V');
+INSERT INTO Componentes
+    (tipo, nombre, imagen, marca, descripcion, precio, modelo, capacidad, velocidad_lectura_escritura, durabilidad, tipo_memoria, canales_memoria, voltaje, latencia)
+VALUES
+    ('RAM', 'G.Skill Ripjaws V Series 32GB (2x16GB)', 'https://www.gskill.com/_upload/images/153611092211.png', 'G.Skill', 'Kit de memoria RAM DDR4 de 32GB (2x16GB) diseñado para rendimiento extremo en aplicaciones intensivas.', 169.99, 'Ripjaws V Series', '32GB (2x16GB)', '3600 MHz', 'Alta durabilidad y estabilidad', 'DDR4', 'Dual', '1.35V', 'CL18');
 
-    INSERT INTO Componentes
-        (tipo, nombre, imagen, marca, descripcion, precio, modelo, capacidad, velocidad_lectura_escritura, durabilidad, tipo_memoria, canales_memoria, voltaje)
-    VALUES
-        ('RAM', 'Crucial Ballistix RGB 32GB (2x16GB)', 'https://www.crucial.es/content/dam/crucial/dram-products/ballistix-family/images/web/crucial-ballistix-stacked-image.psd.transform/small-png/img.png', 'Crucial', 'Kit de memoria RAM DDR4 de 32GB (2x16GB) con iluminación RGB para un rendimiento y estilo excepcionales.', 189.99, 'Ballistix RGB', '32GB (2x16GB)', '3600 MHz', 'Alta durabilidad y estabilidad', 'DDR4', 'Dual', '1.35V');
+INSERT INTO Componentes
+    (tipo, nombre, imagen, marca, descripcion, precio, modelo, capacidad, velocidad_lectura_escritura, durabilidad, tipo_memoria, canales_memoria, voltaje, latencia)
+VALUES
+    ('RAM', 'Crucial Ballistix RGB 32GB (2x16GB)', 'https://www.crucial.es/content/dam/crucial/dram-products/ballistix-family/images/web/crucial-ballistix-stacked-image.psd.transform/small-png/img.png', 'Crucial', 'Kit de memoria RAM DDR4 de 32GB (2x16GB) con iluminación RGB para un rendimiento y estilo excepcionales.', 189.99, 'Ballistix RGB', '32GB (2x16GB)', '3600 MHz', 'Alta durabilidad y estabilidad', 'DDR4', 'Dual', '1.35V', 'CL16');
 
-    INSERT INTO Componentes
-        (tipo, nombre, imagen, marca, descripcion, precio, modelo, capacidad, velocidad_lectura_escritura, durabilidad, tipo_memoria, canales_memoria, voltaje)
-    VALUES
-        ('RAM', 'HyperX Fury RGB 64GB (2x32GB)', 'https://m.media-amazon.com/images/I/61JX70ub-dL._AC_UF894,1000_QL80_.jpg', 'HyperX', 'Kit de memoria RAM DDR4 de 64GB (2x32GB) con iluminación RGB para un rendimiento superior en aplicaciones exigentes.', 329.99, 'Fury RGB', '64GB (2x32GB)', '3200 MHz', 'Duradera y confiable', 'DDR4', 'Dual', '1.35V');
+INSERT INTO Componentes
+    (tipo, nombre, imagen, marca, descripcion, precio, modelo, capacidad, velocidad_lectura_escritura, durabilidad, tipo_memoria, canales_memoria, voltaje, latencia)
+VALUES
+    ('RAM', 'HyperX Fury RGB 64GB (2x32GB)', 'https://m.media-amazon.com/images/I/61JX70ub-dL._AC_UF894,1000_QL80_.jpg', 'HyperX', 'Kit de memoria RAM DDR4 de 64GB (2x32GB) con iluminación RGB para un rendimiento superior en aplicaciones exigentes.', 329.99, 'Fury RGB', '64GB (2x32GB)', '3200 MHz', 'Duradera y confiable', 'DDR4', 'Dual', '1.35V', 'CL16');
