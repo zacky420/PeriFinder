@@ -1,6 +1,6 @@
 const express = require("express");
 const mysql = require("mysql2/promise");
-
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -22,6 +22,7 @@ function filtrarCampos(componente) {
     id: componente.id,
     tipo: componente.tipo,
     nombre: componente.nombre,
+    imagen:componente.imagen,
     marca: componente.marca,
     descripcion: componente.descripcion,
     precio: componente.precio,
@@ -103,7 +104,7 @@ function filtrarCampos(componente) {
       return camposComunes;
   }
 }
-
+app.use(cors());
 app.get("/api/componentes", async (req, res) => {
   try {
     const [rows, fields] = await pool.query("SELECT * FROM Componentes");

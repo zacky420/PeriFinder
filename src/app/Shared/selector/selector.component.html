@@ -1,0 +1,6 @@
+<div class="form-group">
+    <label for="tipoComponente">Seleccione un tipo de componente:</label>
+    <select class="form-control" id="tipoComponente" (change)="onTipoSeleccionado($event)">
+      <option *ngFor="let tipo of tiposComponentes" [value]="tipo">{{ tipo }}</option>
+    </select>
+  </div>
