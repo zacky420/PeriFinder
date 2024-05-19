@@ -1,0 +1,70 @@
+/* Estilos generales para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  /* Estilo para las celdas del encabezado */
+  table thead th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Estilo para las celdas del cuerpo de la tabla */
+  table tbody td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Alternar colores de las filas */
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo para las filas al pasar el ratón */
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Ajustes de alineación */
+  td, th {
+    text-align: center; /* Alinea el texto al centro */
+  }
+  
+  /* Estilos específicos para tablas comparativas */
+  .comparador-table {
+    margin: auto;
+    width: 80%;
+  }
+  
+  .comparador-table th, .comparador-table td {
+    padding: 15px;
+  }
+  
+  .comparador-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .comparador-table tbody tr:nth-child(even) {
+    background-color: #e0f7fa;
+  }
+  
+  .comparador-table tbody tr:nth-child(odd) {
+    background-color: #b2ebf2;
+  }
+  
+  .comparador-table tbody tr:hover {
+    background-color: #81d4fa;
+  }
+  
+
+  .highlight {
+    background-color: green;
+    color: white;
+  }
+  
