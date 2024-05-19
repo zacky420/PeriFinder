@@ -1,0 +1,37 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .thead-dark th {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .table img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .form-group {
+    margin: 20px 0;
+  }
+  
+  .mt-3 {
+    margin-top: 20px;
+  }
+  
+  select.form-control {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+  

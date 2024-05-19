@@ -1,2 +1,49 @@
-<h1 class="text-center">BudgetMaker</h1>
-<h2 class="text-center">En progreso...</h2>
+<div class="container mt-5">
+    <h1 class="text-center">Budget Maker</h1>
+    <shared-selector (tipoSeleccionado)="onTipoSeleccionado($event)"></shared-selector> <!-- Escucha del evento tipoSeleccionado -->
+  
+    <!-- Mostrar tabla solo si isTableVisible es true -->
+    <div *ngIf="isTableVisible" class="mt-3">
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Componente</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Mostrar los componentes filtrados -->
+          <tr *ngFor="let componente of componentes$ | async" (click)="onComponenteSeleccionado(componente)">
+            <td><img [src]="componente.imagen" [alt]="componente.nombre" style="width: 50px; height:50px"> {{ componente.nombre }}</td>
+            <td>{{ componente.precio | currency:'USD':'symbol':'1.2-2' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Tabla de componentes seleccionados -->
+    <div *ngIf="selectedComponentes.length > 0" class="mt-3">
+      <h2>Componentes Seleccionados</h2>
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Componente</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Mostrar los componentes seleccionados -->
+          <tr *ngFor="let componente of selectedComponentes">
+            <td><img [src]="componente.imagen" [alt]="componente.nombre" style="width: 50px; height:50px"> {{ componente.nombre }}</td>
+            <td>{{ componente.precio | currency:'USD':'symbol':'1.2-2' }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Mostrar el precio total -->
+      <div class="mt-3">
+        <h3>Precio Total: {{ calcularPrecioTotal() | currency:'USD':'symbol':'1.2-2' }}</h3>
+        <button class="btn btn-danger" (click)="limpiarComponentesSeleccionados()">Limpiar Tabla</button>
+
+      </div>
+    </div>
+  </div>
